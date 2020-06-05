@@ -91,6 +91,7 @@ class ConcurrentPrimeFinder extends AbstarctPrimeFinder {
             for (int i = 0; i < numberOfParts; i++) {
                 final int lower = (i * chunksPerPartiton) + 1;
                 final int upper = (i == numberOfParts - 1) ? number : lower + chunksPerPartiton - 1;
+                //将任务放入list集合中
                 partitions.add(new Callable<Integer>() {
                     @Override
                     public Integer call() throws Exception {
@@ -112,7 +113,7 @@ class ConcurrentPrimeFinder extends AbstarctPrimeFinder {
     }
 
     public static void main(final String[] args) {
-        new ConcurrentPrimeFinder(2, 2).timeAndCompute(10000000);
+        new ConcurrentPrimeFinder(4, 100).timeAndCompute(10000000);
     }
 }
 
