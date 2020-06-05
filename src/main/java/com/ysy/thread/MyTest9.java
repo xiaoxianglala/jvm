@@ -7,7 +7,7 @@ import java.util.concurrent.*;
 
 /**
  * @ClassName MyTest9
- * @Description TODO
+ * @Description 避免死锁的并发计算
  * @Author ysy
  * @Date 2020/6/5 17:16
  **/
