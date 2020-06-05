@@ -87,6 +87,7 @@ class ConcurrentPrimeFinder extends AbstarctPrimeFinder {
         try {
             final List<Callable<Integer>> partitions = new ArrayList<Callable<Integer>>();
             final int chunksPerPartiton = number / numberOfParts;
+            //创建两个任务，然后并发执行这两个任务
             for (int i = 0; i < numberOfParts; i++) {
                 final int lower = (i * chunksPerPartiton) + 1;
                 final int upper = (i == numberOfParts - 1) ? number : lower + chunksPerPartiton - 1;
