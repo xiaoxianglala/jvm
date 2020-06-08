@@ -50,6 +50,7 @@ public class MyTest11 {
     }
 
     public static void main(String[] args) {
+
         final long start = System.nanoTime();
         final long total = forkJoinPool.invoke(new MyTest11.FileSizeFinder(new File("E:\\workspace\\space2")));
         final long end = System.nanoTime();
