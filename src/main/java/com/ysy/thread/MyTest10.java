@@ -16,7 +16,6 @@ import java.util.concurrent.atomic.AtomicLong;
  * @Date 2020/6/8 15:26
  **/
 public class MyTest10 {
-
     private ExecutorService service;
     final private AtomicLong pendingFileVistis = new AtomicLong();
     final private AtomicLong totalSize = new AtomicLong();
