@@ -62,6 +62,7 @@ class Thread_02B extends Thread{
 
 class T_02Run{
     public static void main(String[] args) {
+
         T_02 t_02 = new T_02();
         new Thread_02A(t_02).start();
         new Thread_02B(t_02).start();
