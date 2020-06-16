@@ -12,7 +12,6 @@ import java.util.concurrent.TimeUnit;
  **/
 public class T_02 {
     private  List<Integer> lists = new ArrayList<Integer>();
-
      public void add(){
         for (int i = 0; i < 10; i++) {
             lists.add(i);
