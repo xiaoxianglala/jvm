@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @ClassName T_02
- * @Description TODO
+ * @Description  while循环通知
  * @Author ysy
  * @Date 2020/6/16 12:20
  **/
