@@ -38,6 +38,8 @@ public class T_05 {
             synchronized (this) {
                 if (!flag) {
                     try {
+                        System.out.println("++++++");
+                        //当又执行到这里的时候，wait，释放锁，其他线程才会得到锁
                         this.wait();
                     }catch (InterruptedException e){
                         e.printStackTrace();
@@ -45,6 +47,7 @@ public class T_05 {
                 }
                 System.out.println((char) (i + 'a'));
                 flag = false;
+                //不会立马释放锁
                 this.notify();
             }
         }
