@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * @ClassName T_03
- * @Description 读写锁
+ * @Description 读写锁（用于读多写少，读读共享，读写互斥，写读互斥，写写互斥）
  * @Author ysy
  * @Date 2020/6/19 10:20
  **/
