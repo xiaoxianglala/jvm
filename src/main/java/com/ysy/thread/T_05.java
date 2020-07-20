@@ -2,6 +2,8 @@ package com.ysy.thread;
 
 import com.ysy.extthread.T;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -13,6 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Date 2020/6/19 14:17
  **/
 public class T_05 {
+    Map map = new HashMap();
     private boolean flag = false;
 
     public void printNum() {
